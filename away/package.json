@@ -1,0 +1,40 @@
+{
+  "name": "@ali/alisports-away",
+  "version": "3.0.18",
+  "description": "Away, 致敬小郭",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && NODE_ENV=production gulp build --gulpfile scripts/compiler.js",
+    "pub": "npm run build && tnpm publish"
+  },
+  "author": "@away",
+  "license": "ISC",
+  "dependencies": {
+    "jx-util": "^2.4.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "gulp": "^4.0.1",
+    "gulp-babel": "^8.0.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/alisports-tinyapp/env.git"
+  },
+  "bugs": {
+    "url": "http://gitlab.alibaba-inc.com/alisports-tinyapp/env/issues"
+  },
+  "homepage": "http://gitlab.alibaba-inc.com/alisports-tinyapp/env/tree/master/away",
+  "keywords": [
+    "away"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npm.alibaba-inc.com"
+  }
+}
